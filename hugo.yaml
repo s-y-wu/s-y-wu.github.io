@@ -1,4 +1,52 @@
 baseURL: https://s-y-wu.github.io/
 languageCode: en-us
-title: Sean's Personal Page
-theme: "PaperMod"
+title: Sean Wu
+theme: PaperMod
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - identifier: home
+      url: /
+    - identifier: projects
+      name: Projects
+      url: /projects
+    - identifier: experience
+      name: Experience
+      url: /experience
+    - identifier: search
+      name: Search
+      url: /search
+
+params:
+  profileMode:
+    enabled: true
+    imageUrl: "home/me.jpeg"
+    imageWidth: 220
+    imageHeight: 220
+    title: Sean Wu
+    subtitle: >
+      👋 Hi! Welcome to my page. I'm an engineer in Broadcom, where I've
+      combined my knowledge in software, analog, and digital design to start an 
+      automation revolution in the radio modeling team. 
+      Because who has the time to click through ancient EDA interfaces?<br>
+  
+      👨‍💻 Incoming MS C.S. student at Georgia Tech<br>
+      🎓 B.S. Engineering, Harvey Mudd College '23<br>
+      🇺🇸 U.S. Citizen advocating for sustainable transportation<br>
+      🌸 Partner to my beautiful girlfriend<br>
+
+  socialIcons:
+    - name: cv
+      url: /resume
+    - name: linkedin
+      url: https://www.linkedin.com/in/sean-y-wu
+    - name: github
+      url: https://github.com/s-y-wu
+    - name: email
+      url: mailto:sywu@duck.com
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
